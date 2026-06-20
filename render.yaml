@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: kamisystem
+    env: docker
+    dockerfilePath: ./Dockerfile
+    disk:
+      name: kamidata
+      mountPath: /var/www/html/Key
+      sizeGB: 1
